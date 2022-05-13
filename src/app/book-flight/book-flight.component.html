@@ -1,0 +1,29 @@
+<div  style="text-align:left;" >
+    <form #flight="ngForm" (ngSubmit)="bookFlight(this.flight.value)">
+        <div style="text-align:left; color: cornflowerblue;">
+        <h2>Book Flight</h2><br><br>
+        </div>
+        <div>
+            <label class="col-md-2" for="FlightNumber" >Flight Number</label>
+            <input class="col-md-2" type="text" name="FlightNumber" required  ngModel>
+        </div>
+        <div>
+            <label class="col-md-2" for="EmailId">Email Id</label>
+            <input class="col-md-2" type="text" name="EmailId" required ngModel><br><br>
+        </div>
+        <div>
+            <label class="col-md-2" for="NoOfSeats">No Of Seats</label>
+            <input class="col-md-2" type="number" name="NoOfSeats" required ngModel>
+        </div>
+        <div>
+            <label class="col-md-2" for="SeatNo">Seat Nos.</label>
+            <input class="col-md-2" type="text" name="SeatNo" required ngModel><br><br>
+        </div>
+        <div>
+            <label class="col-md-2" for="Meal">Meal</label>
+            <input class="col-md-2" type="text" name="Meal" required ngModel>
+        </div><br><br>
+        <input class="btn btn-primary col-md-offset-2 col-md-2" type="submit" value="Book Flight"><br>
+    </form>
+    </div>
+    

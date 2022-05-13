@@ -1,0 +1,24 @@
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+        <th style="font-size:16px;color:darkblue">Flight Number</th>
+        <th style="font-size:16px;color: darkblue">Date</th>
+        <th style="font-size:16px;color: darkblue">Ticket Cost</th>
+       <!-- <th (click)="sort('contact')">Contact<i class="fa fa-sort"></i></th>
+        <th (click)="sort('address')">Address<i class="fa fa-sort"></i></th>
+        <th>Action</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let airline of airlines ">
+        <td>{{airline.flightNumber}}</td>
+        <td>{{airline.date}}</td>
+        <td>{{airline.ticketCost}}</td>
+        <td>
+        <button type="button" class="btn btn-primary" (click)="removeAirline(airline.flightNumber)" >Remove</button>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+      

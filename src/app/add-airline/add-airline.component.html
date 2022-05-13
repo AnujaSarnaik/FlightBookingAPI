@@ -1,0 +1,50 @@
+<!--<p>add-airline works!</p>-->
+<div col-md-2 style="text-align:left;" >
+<form #airline="ngForm"  (ngSubmit)="addAirline(this.airline.value)">
+<!--<form #airline="ngForm" (ngSubmit)="getAirline()">-->
+    <div style="text-align: center;color: cornflowerblue;">
+    <h2>Add Flight</h2><br><br>
+    </div>
+    <div>
+        <label class="col-md-2" for="FlightNumber" >Flight Number</label>
+        <input class="col-md-2" type="text" name="FlightNumber" required  ngModel>
+        <label class="col-md-2" for="Airline">Airline Name</label>
+        <input class="col-md-2" type="text" name="Airline" required ngModel><br><br>
+    </div>
+    <div>
+        <label class="col-md-2" for="FromPlace">From Place</label>
+        <input class="col-md-2" type="text" name="FromPlace" required ngModel>
+        <label class="col-md-2" for="ToPlace">To Place</label>
+        <input class="col-md-2" type="text" name="ToPlace" required ngModel><br><br>
+    </div>
+    <div>
+        <label class="col-md-2" for="ScheduledDays">Scheduled Days</label>
+        <input class="col-md-2" type="text" name="ScheduledDays" required ngModel>
+        <label class="col-md-2" for="InstrumentUsed">Instrument Used</label>
+        <input class="col-md-2" type="text" name="InstrumentUsed" required ngModel><br><br>
+    </div>
+    <div>
+        <label class="col-md-2" for="BusinessSeats">Business Seats</label>
+        <input class="col-md-2" type="number" name="BusinessSeats" required ngModel>
+        <label class="col-md-2" for="NonBusinessSeats">Non Business Seats</label>
+        <input class="col-md-2" type="number" name="NonBusinessSeats" required ngModel><br><br>
+    </div>
+    <div>
+        <label class="col-md-2" for="TicketCost">Ticket Cost</label>
+        <input class="col-md-2" type="number" name="TicketCost" required ngModel>
+        <label class="col-md-2" for="Rows">Rows</label>
+        <input class="col-md-2" type="number" name="Rows" required ngModel><br><br>
+        
+    </div>
+    <div>
+        <label class="col-md-2" for="Status">Available</label>
+        <input class="col-md-2" type="text" name="Status" required ngModel>
+        <label class="col-md-2" for="Meal">Meal</label>
+        <input class="col-md-2" type="text" name="Meal" required ngModel><br><br>
+    </div>
+    <label class="col-md-2" for="Date">Date</label>
+    <input class="col-md-2" type="date" name="Date" required ngModel><br><br>
+
+    <input class="btn btn-primary col-md-offset-2 col-md-2" type="submit" value="Add New Airline"><br>
+</form>
+</div>
