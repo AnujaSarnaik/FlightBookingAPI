@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/airlinesapiservicesdbserver/databases/AirlinesAPIServices_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:connection1",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
